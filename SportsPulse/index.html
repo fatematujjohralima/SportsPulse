@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SportsPulse</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Fontawesome -->
+     <link rel="stylesheet" href="css/all.min.css">
+     <link rel="stylesheet" href="css/fontawesome.min.css">
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+  </head>
+  <body id="modal-body">
+    <!-- Navbar Start -->
+    <nav class="navbar bg-body-tertiary">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">SportsPulse</a>
+        <form class="d-flex" role="search">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+            id="search-input"
+          />
+          <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
+          <button onclick="searchPlayer()" class="btn btn-outline-success" type="button">Search</button>
+        </form>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <div class="container mt-3">
+      <div class="row">
+        <!-- Player Container -->
+        <div class="col-lg-9">
+          <div class="row" id="player_container">
+          </div>
+        </div>
+
+        <!-- Cart Container -->
+
+        <div class="col-lg-3">
+          
+          <div id="group_member_add"></div>
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+<!-- Modail View -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Player Details</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+    <!-- Bootstrap js  -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Script Js -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
